@@ -1,19 +1,10 @@
-checkout:
-  post:
-    - git submodule sync
-    - git submodule update --init
+machine:
+  java:
+    version: openjdk7
     
 test:
   override:
-    - php ./app/run-server.php --daemon
-    - php ./test-suite/run.php --unit-tests
-    
-    import static org.junit.Assert.*;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
+	- echo "test"    
 
 public class CalcTest {
 
