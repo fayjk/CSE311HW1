@@ -5,12 +5,20 @@
 
 public class Calc
 {
-   static public int add (int a, int b)
+   static public float add (float one, float two)
    {
-      return a + b;
+      return one + two;
    }
    
-   static public int subtract(int a, int b){
-	   return 1;
+   static public float subtract(float one, float two){
+	   return one - two;
+   }
+   
+   static public float multiply(float one, float two){
+	   return one * two;
+   }
+   
+   static public float divide(float numerator, float denominator){
+	   return numerator / denominator;
    }
 }
